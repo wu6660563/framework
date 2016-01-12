@@ -63,7 +63,12 @@ public class APPAPIServiceImpl implements APPAPIService {
 		return jsonData;
 	}
 	
-	
+	/**
+	 * 
+	 * @Title APPAPIServiceImpl defaultResponse
+	 * @return String
+	 * @Description TODO
+	 */
 	public String defaultResponse() {
 		String jsonData = "{}";
 		HashMap<String, Object> returnHash = new HashMap<String, Object>();
@@ -75,18 +80,42 @@ public class APPAPIServiceImpl implements APPAPIService {
 		return jsonData;
 	}
 
+	/**
+	 * 
+	 * @Title APPAPIServiceImpl getOpinionService
+	 * @return OpinionService
+	 * @Description TODO
+	 */
 	public OpinionService getOpinionService() {
 		return opinionService;
 	}
 
+	/**
+	 * 
+	 * @Title APPAPIServiceImpl setOpinionService
+	 * @param opinionService void
+	 * @Description TODO
+	 */
 	public void setOpinionService(OpinionService opinionService) {
 		this.opinionService = opinionService;
 	}
 	
+	/**
+	 * 
+	 * @Title APPAPIServiceImpl getVersionService
+	 * @return VersionService
+	 * @Description TODO
+	 */
 	public VersionService getVersionService() {
 		return versionService;
 	}
 
+	/**
+	 * 
+	 * @Title APPAPIServiceImpl setVersionService
+	 * @param versionService void
+	 * @Description TODO
+	 */
 	public void setVersionService(VersionService versionService) {
 		this.versionService = versionService;
 	}

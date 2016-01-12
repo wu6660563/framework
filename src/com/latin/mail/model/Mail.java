@@ -5,9 +5,11 @@ import com.latin.model.BaseModel;
 /**
  * Mail的model SELECT * FROM oc_setting oc WHERE oc.code = 'config' AND oc.key
  * LIKE '%config_mail%'
- * 
- * @author nick
- *
+ * @ClassName Mail
+ * @Description TODO
+ * @author Nick
+ * @version 1.0
+ * @Date Jan 12, 2016 10:25:06 PM
  */
 public class Mail extends BaseModel {
 

@@ -13,6 +13,14 @@ import com.latin.mail.model.MailTask;
 import com.latin.mail.service.MailService;
 import com.latin.mail.util.MailUtil;
 
+/**
+ * 
+ * @ClassName MailServiceImpl
+ * @Description TODO
+ * @author Nick
+ * @version 1.0
+ * @Date Jan 12, 2016 10:26:18 PM
+ */
 @Service("mailService")
 @Transactional
 public class MailServiceImpl implements MailService {
@@ -30,6 +38,13 @@ public class MailServiceImpl implements MailService {
 	@Autowired
 	public MailUtil mailUtil;
 
+	/**
+	 * 
+	 * @Title sendMailTask
+	 * @Description 
+	 * @return
+	 * @see com.latin.mail.service.MailService#sendMailTask()
+	 */
 	public boolean sendMailTask() {
 		System.out.println("是否调用！！！！！！！！！！");
 		boolean flag = false;
@@ -48,21 +63,36 @@ public class MailServiceImpl implements MailService {
 		flag = true;
 		return flag;
 	}
-	
+
+	/**
+	 * @return mailMapper
+	 */
 	public MailMapper getMailMapper() {
 		return mailMapper;
 	}
 
+	/**
+	 * @param mailMapper
+	 * mailMapper
+	 */
 	public void setMailMapper(MailMapper mailMapper) {
 		this.mailMapper = mailMapper;
 	}
-	
+
+	/**
+	 * @return mailUtil
+	 */
 	public MailUtil getMailUtil() {
 		return mailUtil;
 	}
 
+	/**
+	 * @param mailUtil
+	 * mailUtil
+	 */
 	public void setMailUtil(MailUtil mailUtil) {
 		this.mailUtil = mailUtil;
 	}
+	
 
 }

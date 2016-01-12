@@ -30,6 +30,13 @@ public class VersionServiceImpl implements VersionService {
 	@Autowired
 	private VersionMapper versionMapper;
 
+	/**
+	 * 
+	 * @Title getLatestVersion
+	 * @Description 
+	 * @return
+	 * @see com.latin.api.app.service.VersionService#getLatestVersion()
+	 */
 	public String getLatestVersion() {
 		Version version = versionMapper.getLastObject();
 		
@@ -43,10 +50,22 @@ public class VersionServiceImpl implements VersionService {
 		return result.toString();
 	}
 
+	/**
+	 * 
+	 * @Title VersionServiceImpl getVersionMapper
+	 * @return VersionMapper
+	 * @Description TODO
+	 */
 	public VersionMapper getVersionMapper() {
 		return versionMapper;
 	}
 
+	/**
+	 * 
+	 * @Title VersionServiceImpl setVersionMapper
+	 * @param versionMapper void
+	 * @Description TODO
+	 */
 	public void setVersionMapper(VersionMapper versionMapper) {
 		this.versionMapper = versionMapper;
 	}

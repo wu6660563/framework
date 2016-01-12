@@ -22,16 +22,30 @@ import javax.mail.internet.MimeUtility;
 
 /**
  * 简单的邮件测试类
- * 
- * @author nick
- *
+ * @ClassName MailTest
+ * @Description TODO
+ * @author Nick
+ * @version 1.0
+ * @Date Jan 12, 2016 10:36:49 PM
  */
 public class MailTest {
 
+	/**
+	 * 
+	 * @Title MailTest main
+	 * @param args void
+	 * @Description TODO
+	 */
 	public static void main(String[] args) {
 		mainTest();
 	}
 
+	/**
+	 * 
+	 * @Title MailTest mail_test
+	 * @param reviewer void
+	 * @Description TODO
+	 */
 	public static void mail_test(String reviewer) {
 		if (reviewer == null) {
 			return;
@@ -109,6 +123,11 @@ public class MailTest {
 		}
 	}
 
+	/**
+	 * 
+	 * @Title MailTest mainTest void
+	 * @Description TODO
+	 */
 	public static void mainTest() {
 		String[] reviceiver = { "nick@comprame.com", "953374957@qq.com" };
 		for (int i = 0; i < reviceiver.length; i++) {

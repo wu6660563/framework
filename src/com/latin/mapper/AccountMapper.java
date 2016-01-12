@@ -3,9 +3,12 @@ package com.latin.mapper;
 import com.latin.model.AccountModel;
 
 /**
- * TEST的Mapper类，用于参考，不做实际用途
- * @author NICK
- *
+ * 
+ * @ClassName AccountMapper
+ * @Description TODO
+ * @author Nick
+ * @version 1.0
+ * @Date Jan 12, 2016 10:27:59 PM
  */
 public interface AccountMapper {
 

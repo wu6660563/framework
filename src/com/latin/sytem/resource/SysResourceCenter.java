@@ -1,56 +1,44 @@
 package com.latin.sytem.resource;
 
 /**
- * ClassName:SysResource
  * <p>
  * 系统资源中心，该类包含系统主要配置。
  * <p>
  * 
- * @author nick
- * @version v1.01
- * @since v1.01
- * @Date 2015/09/10
+ * @ClassName SysResourceCenter
+ * @Description TODO
+ * @author Nick
+ * @version 1.0
+ * @Date Jan 12, 2016 10:35:14 PM
  */
 public final class SysResourceCenter {
 
 	/**
-	 * instance：
-	 * <p>
 	 * 静态的唯一的 SysResourceCenter 实例
-	 * 
-	 * @since v1.01
 	 */
 	private static SysResourceCenter instance;
 
 	/**
-	 * sysPath：
-	 * <p>
 	 * 系统路径
-	 * </p>
-	 * 
-	 * @since v1.01
 	 */
 	private String sysPath = "";
 
 	/**
-	 * <p>
 	 * 创建一个新的 {@link SysResourceCenter} 实例。 由于该类使用单例模式，所以该方法为私有的。
-	 * </p>
 	 * 
-	 * @since v1.01
+	 * @Title SysResourceCenter
+	 * 
+	 * @Description TODO
 	 */
 	private SysResourceCenter() {
 	}
 
 	/**
-	 * getInstance:
-	 * <p>
-	 * 获取 {@link SysResourceCenter} 的实例，如果该实例为 <code>null</code>，则创建一个
-	 * {@link SysResourceCenter} 实例。
+	 * getInstance单例模式，获取实例
 	 * 
-	 * @return {@link SysResourceCenter} - 返回 {@link SysResourceCenter} 的实例
-	 * 
-	 * @since v1.01
+	 * @Title SysResourceCenter getInstance
+	 * @return SysResourceCenter
+	 * @Description TODO
 	 */
 	public static SysResourceCenter getInstance() {
 		if (instance == null) {
@@ -60,27 +48,23 @@ public final class SysResourceCenter {
 	}
 
 	/**
-	 * getSysPath
-	 * <p>
 	 * 获取系统路径
-	 * </p>
 	 * 
-	 * @return {@link String} - 返回系统路径
-	 * @since v1.01
+	 * @Title SysResourceCenter getSysPath
+	 * @return String
+	 * @Description TODO
 	 */
 	public String getSysPath() {
 		return sysPath;
 	}
 
 	/**
-	 * setSysPath:
-	 * <p>
 	 * 设置系统路径
 	 * 
+	 * @Title SysResourceCenter setSysPath
 	 * @param sysPath
-	 *            - 系统路径
-	 * 
-	 * @since v1.01
+	 *            void
+	 * @Description TODO
 	 */
 	public void setSysPath(String sysPath) {
 		this.sysPath = sysPath;

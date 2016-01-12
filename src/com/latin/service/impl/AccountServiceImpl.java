@@ -6,10 +6,13 @@ import org.springframework.stereotype.Service;
 import com.latin.mapper.AccountMapper;
 import com.latin.model.AccountModel;
 import com.latin.service.AccountService;
+
 /**
- * 
- * @author nick
- *
+ * @ClassName AccountServiceImpl
+ * @Description TODO
+ * @author Nick
+ * @version 1.0
+ * @Date Jan 12, 2016 10:34:22 PM
  */
 @Service("accountService")
 public class AccountServiceImpl implements AccountService {

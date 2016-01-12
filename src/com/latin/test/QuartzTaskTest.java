@@ -13,15 +13,25 @@ import com.latin.quartz.QuartzFactory;
 
 /**
  * 测试定时器（定时测试）
- * 
- * @author nick
- *
+ * @ClassName QuartzTaskTest
+ * @Description TODO
+ * @author Nick
+ * @version 1.0
+ * @Date Jan 12, 2016 10:37:32 PM
  */
 public class QuartzTaskTest extends BaseJob {
 
 	/** 日志对象 */
 	// private Logger logger = Logger.getLogger(QuartzTaskTest.class);
 
+	
+	/**
+	 * @Title execute
+	 * @Description 
+	 * @param arg0
+	 * @throws JobExecutionException
+	 * @see com.latin.quartz.BaseJob#execute(org.quartz.JobExecutionContext)
+	 */
 	public void execute(JobExecutionContext arg0) throws JobExecutionException {
 		System.out.println("Test");
 
@@ -34,6 +44,11 @@ public class QuartzTaskTest extends BaseJob {
 		System.out.println("TEST结束。。。");
 	}
 
+	/**
+	 * @Title QuartzTaskTest main
+	 * @param args void
+	 * @Description TODO
+	 */
 	public static void main(String[] args) {
 		PropertyConfigurator
 				.configure("E:/git/api/oc-service/WebRoot/WEB-INF/log4j.properties");

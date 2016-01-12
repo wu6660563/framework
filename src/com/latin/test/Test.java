@@ -7,20 +7,38 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 这个包所在的目录里面的文件都是测试类
- * @author nick
- * @since 2015/09/17
- *
+ * @ClassName Test
+ * @Description TODO
+ * @author Nick
+ * @version 1.0
+ * @Date Jan 12, 2016 10:38:04 PM
  */
 public class Test {
 	
+	/**
+	 * @Fields queque TODO
+	 */
 	public static Vector<MyTask> queque = new Vector<MyTask>();
 	
+	/**
+	 * @Title Test getQueque
+	 * @return Vector<MyTask>
+	 * @Description TODO
+	 */
 	public static Vector<MyTask> getQueque() {
 		return queque;
 	}
 
+	/**
+	 * @Fields countNum TODO
+	 */
 	public static int countNum = 0;
 	
+	/**
+	 * @Title Test main
+	 * @param args void
+	 * @Description TODO
+	 */
 	public static void main(String[] args) {   
         ThreadPoolExecutor executor = new ThreadPoolExecutor(5, 10, 200, TimeUnit.MILLISECONDS,
                 new ArrayBlockingQueue<Runnable>(5));
@@ -43,13 +61,35 @@ public class Test {
     }
 }
 
+/**
+ * @ClassName MyTask
+ * @Description TODO
+ * @author Nick
+ * @version 1.0
+ * @Date Jan 12, 2016 10:38:13 PM
+ */
 class MyTask implements Runnable {
+	
+    /**
+     * @Fields taskNum TODO
+     */
     private int taskNum;
      
+    /**
+     * @Title MyTask
+     * 
+     * @Description TODO
+     * @param num
+     */
     public MyTask(int num) {
         this.taskNum = num;
     }
      
+    /**
+     * @Title run
+     * @Description 
+     * @see java.lang.Runnable#run()
+     */
     public void run() {
         System.out.println("正在执行task "+taskNum);
         

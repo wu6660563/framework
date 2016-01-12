@@ -59,17 +59,13 @@ public class MailUtil {
 
 	/**
 	 * 
-	 * @param reviceiver
-	 *            接收人
-	 * @param copyUser
-	 *            抄送人
-	 * @param content
-	 *            邮件内容
-	 * @param subject
-	 *            邮件标题
-	 * @param files
-	 *            附件
-	 * @throws UnsupportedEncodingException
+	 * @Title MailUtil send
+	 * @param reviceiver 接收人
+	 * @param content 内容
+	 * @param subject 标题
+	 * @param files 附件文件数组
+	 *  void 
+	 * @Description TODO
 	 */
 	public void send(String reviceiver, String content, String subject,
 			String[] files) {
@@ -133,7 +129,9 @@ public class MailUtil {
 	}
 
 	/**
-	 * 初始化
+	 * 
+	 * @Title MailUtil init void
+	 * @Description TODO
 	 */
 	private void init() {
 		List<HashMap<String, String>> list = mailMapper.getMailProperties();

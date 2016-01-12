@@ -5,10 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * 
- * @ClassName：AccountController
- * @author：nick
- * @CreateTime：2015/09/08
+ * @ClassName AccountController
+ * @Description TODO
+ * @author Nick
  * @version 1.0
+ * @Date Jan 12, 2016 10:24:31 PM
  */
 @Controller
 @RequestMapping("/account")

@@ -7,6 +7,14 @@ import org.springframework.stereotype.Component;
 import com.latin.common.ApplicationContextFactory;
 import com.latin.mail.service.MailService;
 
+/**
+ * 
+ * @ClassName MailTask
+ * @Description TODO
+ * @author Nick
+ * @version 1.0
+ * @Date Jan 12, 2016 10:33:30 PM
+ */
 @Component("mailTask")
 public class MailTask {
 

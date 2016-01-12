@@ -19,8 +19,16 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/app")
 public class TestController {
 
+	/**
+	 * @Fields logger TODO
+	 */
 	private Logger logger = Logger.getLogger(this.getClass());
 	
+	/**
+	 * @Title TestController Test
+	 * @return ModelAndView
+	 * @Description TODO
+	 */
 	@RequestMapping(value = "/test2", method = RequestMethod.GET)
 	@ResponseBody
 	public ModelAndView Test() {

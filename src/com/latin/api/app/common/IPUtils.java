@@ -23,6 +23,12 @@ import com.latin.common.exception.BaseException;
  */
 public class IPUtils {
 
+	/**
+	 * @Title IPUtils getRequestIpAddr
+	 * @param request
+	 * @return String
+	 * @Description TODO
+	 */
 	public static String getRequestIpAddr(HttpServletRequest request) {
 
 		String ip = request.getHeader("X-Forwarded-For");

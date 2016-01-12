@@ -29,11 +29,20 @@ import com.latin.mail.util.MailUtil;
 @RequestMapping("/app")
 public class AppController {
 
+	/**
+	 * @Fields logger TODO
+	 */
 	private Logger logger = Logger.getLogger(this.getClass());
 
+	/**
+	 * @Fields appAPIService TODO
+	 */
 	@Resource(name = "appAPIService")
 	public APPAPIService appAPIService;
 
+	/**
+	 * @Fields mailUtil TODO
+	 */
 	@Autowired
 	public MailUtil mailUtil;
 
