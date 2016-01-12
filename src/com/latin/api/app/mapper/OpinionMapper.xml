@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace和定义的Mapper接口对应，并实现其中的方法 -->
+<mapper namespace="com.latin.api.app.mapper.OpinionMapper">
+	<insert id="add" parameterType="com.latin.api.app.model.Opinion">
+		<!-- selectKey返回刚刚插入的主键ID的值到accountId -->
+		<selectKey resultType="int" keyProperty="opinion_id" order="AFTER">    
+         	select last_insert_id() as opinion_id from oc_opinion limit 1
+     	</selectKey>
+    	insert into oc_opinion(os_type,customer_id,netflow_type,phone,email,user_name,content,version_number,date_added,date_modified) 
+    		values
+    	(#{os_type},#{customer_id},#{netflow_type},#{phone},#{email},#{user_name},#{content},#{version_number},#{date_added},#{date_modified})
+    </insert>
+</mapper>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace和定义的Mapper接口对应，并实现其中的方法 -->
+<mapper namespace="com.latin.mail.mapper.MailMapper">
+
+	<select id="getMailProperties"  resultType="java.util.HashMap">
+    SELECT * FROM oc_setting oc WHERE oc.code = 'config' AND oc.key LIKE '%config_mail%'
+  	</select>
+  	
+  	<select id="getMailTaskList"  resultType="com.latin.mail.model.MailTask">
+    select * from oc_mail_task where is_ok = 0 and send_count &lt; 5 order by date_added ASC limit 5
+  	</select>
+  	
+  	<update id="updateStatus" parameterType="com.latin.mail.model.MailTask">
+  	UPDATE oc_mail_task SET is_ok=#{is_ok},send_count=#{send_count} WHERE task_id=#{task_id}
+  	</update>
+
+</mapper>
+
