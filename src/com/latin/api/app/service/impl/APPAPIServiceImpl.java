@@ -120,4 +120,15 @@ public class APPAPIServiceImpl implements APPAPIService {
 		this.versionService = versionService;
 	}
 
+	/**
+	 * @Title test
+	 * @Description 
+	 * @return
+	 * @see com.latin.api.app.service.APPAPIService#test()
+	 */
+	public String test() {
+		System.out.println("111111111111111");
+		return null;
+	}
+
 }

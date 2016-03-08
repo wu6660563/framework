@@ -13,5 +13,7 @@ import java.util.HashMap;
 public interface APPAPIService {
 	
 	public String excute(HashMap<String, String> map);
+	
+	public String test();
 
 }
