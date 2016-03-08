@@ -38,37 +38,13 @@ public class AppController {
 	 * @Fields appAPIService TODO
 	 */
 	@Resource(name = "appAPIService")
-	public APPAPIService appAPIService;
+	private APPAPIService appAPIService;
 
 	/**
 	 * @Fields mailUtil TODO
 	 */
 	@Autowired
-	public MailUtil mailUtil;
-
-	/**
-	 * 
-	 * @Title AppController
-	 * @param @return
-	 * @return MailUtil
-	 * @Description TODO
-	 * @thorws
-	 */
-	public MailUtil getMailUtil() {
-		return mailUtil;
-	}
-
-	/**
-	 * 
-	 * @Title AppController
-	 * @param @param mailUtil
-	 * @return void
-	 * @Description TODO
-	 * @thorws
-	 */
-	public void setMailUtil(MailUtil mailUtil) {
-		this.mailUtil = mailUtil;
-	}
+	private MailUtil mailUtil;
 
 	/**
 	 * 

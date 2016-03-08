@@ -32,29 +32,6 @@ public class OpinionServiceImpl implements OpinionService {
 	@Autowired
 	private OpinionMapper opinionMapper;
 
-	/**
-	 * 
-	 * @Title OpinionServiceImpl
-	 * @param @return
-	 * @return OpinionMapper
-	 * @Description TODO
-	 * @thorws
-	 */
-	public OpinionMapper getOpinionMapper() {
-		return opinionMapper;
-	}
-
-	/**
-	 * 
-	 * @Title OpinionServiceImpl
-	 * @param @param opinionMapper
-	 * @return void
-	 * @Description TODO
-	 * @thorws
-	 */
-	public void setOpinionMapper(OpinionMapper opinionMapper) {
-		this.opinionMapper = opinionMapper;
-	}
 
 	/**
 	 * 
