@@ -16,7 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
  * @Date Jan 12, 2016 9:44:30 PM
  */
 @Controller
-@RequestMapping("/app")
+@RequestMapping("/test")
 public class TestController {
 
 	/**

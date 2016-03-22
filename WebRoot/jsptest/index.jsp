@@ -19,9 +19,7 @@
   </head>
   
   <body>
-  <!-- 
           <h3>MyBatis 3.0.4  整合  Spring 3.0.5</h3>
         <a href="${pageContext.request.contextPath}/account/addinit.do">添加</a><br/>
-    -->
   </body>
 </html>

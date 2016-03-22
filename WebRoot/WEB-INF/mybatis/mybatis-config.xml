@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<settings>
+		<!-- changes from the defaults -->
+		<setting name="lazyLoadingEnabled" value="false" />
+		<setting name="cacheEnabled" value="false"/>
+	</settings>
+	
+	<!-- 把对象隐射到控制层去，控制层可在这里引用别名，如果未添加，控制层就只能通过request.request.getParameter的方式获取值 -->
+	<!-- 
+	<typeAliases>
+		 Account是测试整个SpringMVC机制的测试 
+		<typeAlias type="com.latin.model.AccountModel" alias="AccountModel"/>
+		
+		<typeAlias type="com.latin.api.app.model.Opinion" alias="opinion"/>
+		<typeAlias type="com.latin.api.app.model.Version" alias="version"/>
+	</typeAliases>
+	
+	<mappers>
+		<mapper resource="com/latin/mapper/AccountMapper.xml"/>
+		
+		<mapper resource="com/latin/api/app/mapper/OpinionMapper.xml"/>
+		<mapper resource="com/latin/api/app/mapper/VersionMapper.xml"/>
+		<mapper resource="com/latin/mail/mapper/MailMapper.xml"/>
+	</mappers>-->
+	
+</configuration>
